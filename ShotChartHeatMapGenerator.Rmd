@@ -177,13 +177,13 @@ plot_court = function(court_theme = court_themes$light, use_short_three = FALSE)
 
 nba_teams() %>% filter(isNonNBATeam == 0)
 
-team <- teams_shots(teams = "Brooklyn Nets", seasons = 2021, season_types = "Regular Season")
+team <- teams_shots(teams = "Milwaukee Bucks", seasons = 2021, season_types = "Playoffs")
 
-player <- team %>% filter(namePlayer=="Kevin Durant") %>% mutate(x = as.numeric(as.character(locationX)) / 10, y = as.numeric(as.character(locationY)) / 10 + hoop_center_y)
+player <- team %>% filter(namePlayer=="Giannis Antetokounmpo") %>% mutate(x = as.numeric(as.character(locationX)) / 10, y = as.numeric(as.character(locationY)) / 10 + hoop_center_y)
 
 player$x <- player$x * -1 
 
-#final_player <- player %>% filter(dateGame == 20210720)
+final_player <- player %>% filter(dateGame == 20210720)
 ```
 
 # NBA Shot Chart
@@ -264,4 +264,5 @@ p1 <- plot_court(court_themes$ppt, use_short_three = T) +
 ggdraw(p1) + theme(plot.background = element_rect(fill="gray20", color = NA)) 
 #ggsave("Paolo.png", height = 6, width = 6, dpi = 300)
 ```
-#Inspired by tutorials by Dominic Samangy
+
+#Inspired by tutorials by McKay Johns
