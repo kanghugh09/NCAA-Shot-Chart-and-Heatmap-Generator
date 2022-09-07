@@ -4,7 +4,7 @@ Scrapes online databases of NCAA/NBA data to generate a shot chart or heat map f
 Examples
 
 NBA Shot Chart
-![GiannisShotChart](https://user-images.githubusercontent.com/105010497/188782633-3fedf84b-8bc9-4926-8a29-78b476327120.png)
+![image](https://user-images.githubusercontent.com/105010497/188783195-a68fbf0d-abed-4d22-8a7d-b996c508fd76.png)
 
 NBA Heatmap
 ![KDHeatmap](https://user-images.githubusercontent.com/105010497/188782451-a233c40b-68af-4d63-a9e8-0d98fa2a831e.png)
